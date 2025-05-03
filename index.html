@@ -1,106 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Transmate.pro - Break the Language Barrier</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transmate.pro - Break Language Barriers</title>
   <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fdfb;
+      color: #1EBF74;
+      position: relative;
+      min-height: 100vh; 
+        max-width: 100%;
+        overflow: hidden;
     }
+
     header {
-      background: #4CAF50;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .features {
+      background-color: #ffffff;
+      padding: 20px 40px;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin-top: 30px;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0, 128, 0, 0.1);
     }
-    .feature {
-      background: white;
-      padding: 20px;
-      margin: 10px;
-      flex: 1 1 300px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #1EBF74;
     }
-    .feature h3 {
-      color: #4CAF50;
-    }
-    .cta {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .cta a {
-      background: #4CAF50;
-      color: white;
-      padding: 15px 30px;
+
+    .social-icons a {
+      margin-left: 15px;
       text-decoration: none;
-      border-radius: 5px;
-      font-size: 18px;
+      color: #1EBF74;
+      font-size: 20px;
     }
+
+    .main {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .main h1 {
+      font-size: 40px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #1EBF74;
+    }
+
+    .video-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 450px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 8px 20px rgba(0, 128, 0, 0.2);
+    }
+    .btn {
+    display: block;
+    width: 260px;
+    margin: auto;
+    height: 70px;
+    margin-top: 20px;
+}
+
+.btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border: 1px solid #1EBF74;
+}
     footer {
-      text-align: center;
-      margin-top: 50px;
-      padding: 20px;
-      background-color: #e0e0e0;
-    }
-    footer a {
-      text-decoration: none;
-      color: #333;
-      margin: 0 10px;
-    }
+    text-align: center;
+    padding: 10px;
+    color: #1EBF74;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Welcome to Transmate.pro</h1>
-    <p>Break the Language Barrier Effortlessly</p>
+    <div class="logo">Transmate.pro</div>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61574473360878" target="_blank">Facebook</a>
+      <a href="https://www.linkedin.com/company/transmate-pro" target="_blank">Linkedin</a>  
+    </div>
   </header>
 
-  <section>
-    <h2>Why Transmate.pro?</h2>
-    <p>Transmate.pro is a smart browser extension that translates your incoming messages, outgoing inputs, and selected text instantly — accurately and human-friendly using AI.</p>
-
-    <div class="features">
-      <div class="feature">
-        <h3>Real-Time Translation</h3>
-        <p>Incoming messages and outgoing text are translated automatically in your preferred language with just a click.</p>
-      </div>
-      <div class="feature">
-        <h3>Context Menu Translation</h3>
-        <p>Select any text on a webpage, right-click, and get an instant, accurate translation without leaving the page.</p>
-      </div>
-      <div class="feature">
-        <h3>AI-Powered Accuracy</h3>
-        <p>Our AI engine ensures translations are natural, human-friendly, and contextually correct — better than traditional translators.</p>
-      </div>
+  <div class="main">
+    <h1>Break the Language Barrier.</h1>
+    <div class="video-container">
+      <!-- Replace the src below with your actual video URL -->
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
     </div>
-
-    <div class="cta">
-      <a href="#">Get Started Now</a>
-    </div>
-  </section>
+    <a href="https://chromewebstore.google.com/detail/magfajhfdjhbhbjapkjkofgjincokpkn?utm_source=item-share-cb" target="_blank" class="btn"><img src="webstore.png" alt=""></a>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Transmate.pro. All rights reserved.</p>
-    <p>
-      <a href="./privacy-policy.html">Privacy Policy</a> | 
-      <a href="./terms-of-service.html">Terms of Service</a>
-    </p>
+    &copy; 2025 Transmate.pro. All rights reserved.
   </footer>
 
 </body>
