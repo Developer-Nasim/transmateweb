@@ -13,7 +13,7 @@
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f9fdfb;
-      color: #1EBF74;
+      color: #53d300;
       position: relative;
       min-height: 100vh; 
         max-width: 100%;
@@ -22,7 +22,7 @@
 
     header {
       background-color: #ffffff;
-      padding: 20px 40px;
+      padding: 10px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -32,13 +32,13 @@
     .logo {
       font-size: 28px;
       font-weight: bold;
-      color: #1EBF74;
+      color: #53d300;
     }
 
     .social-icons a {
       margin-left: 15px;
       text-decoration: none;
-      color: #1EBF74;
+      color: #53d300;
       font-size: 20px;
     }
 
@@ -51,7 +51,7 @@
       font-size: 40px;
       max-width: 700px;
       margin: 0 auto 30px;
-      color: #1EBF74;
+      color: #53d300;
     }
 
     .video-container {
@@ -73,31 +73,60 @@
     height: 70px;
     margin-top: 20px;
 }
-
+video {
+    width: 100%;
+    height: 400px;
+}
 .btn img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
-    border: 1px solid #1EBF74;
+    border: 1px solid #53d300;
 }
     footer {
     text-align: center;
     padding: 10px;
-    color: #1EBF74;
+    color: #53d300;
     font-size: 14px;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
 }
+.logo img {
+    display: block;
+    max-width: 50px;
+}
+@media screen and (max-width: 768px) {
+    .main h1 {
+        font-size: 30px;
+    }
+    .video-container iframe {
+        height: 300px;
+    }
+    .social-icons a { 
+    font-size: 14px;
+}
+    .btn {
+        width: 200px;
+        height: 50px;
+    }
+    video {
+        height: 300px;
+    }
+    .logo img {
+    display: block;
+    max-width: 30px;
+}
+}
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">Transmate.pro</div>
+    <div class="logo"><img src="./logo.png" alt=""></div>
     <div class="social-icons">
       <a href="https://www.facebook.com/profile.php?id=61574473360878" target="_blank">Facebook</a>
       <a href="https://www.linkedin.com/company/transmate-pro" target="_blank">Linkedin</a>  
@@ -107,8 +136,8 @@
   <div class="main">
     <h1>Break the Language Barrier.</h1>
     <div class="video-container">
-      <!-- Replace the src below with your actual video URL -->
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <!-- Replace the src below with your actual video URL --> 
+      <video src="./video.mp4" controls width="400" height="300"></video>
     </div>
     <a href="https://chromewebstore.google.com/detail/magfajhfdjhbhbjapkjkofgjincokpkn?utm_source=item-share-cb" target="_blank" class="btn"><img src="webstore.png" alt=""></a>
   </div>
